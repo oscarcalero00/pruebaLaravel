@@ -23,4 +23,8 @@ class Marca extends Model
         'marca_nombre',
         'marca_referencia'
     ];
+
+    public function producto(){
+        return $this->belongsTo(Producto::class,"producto_marca","id");
+    }
 }

@@ -1,5 +1,29 @@
 @extends('layouts.app')
-
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #ADD8E6;">
+    <a href="/">
+        <img src="https://www.tiendapp.net/images/logo-tiendapp.png" />
+    </a>
+    &nbsp;
+    &nbsp;
+    <a href="/marcas">
+        Marcas
+    </a>
+    &nbsp;
+    &nbsp;
+    <a href="/productos">
+        Productos
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+    </div>
+</nav>
 @section('content')
     <div class="row">
         <div class="col-lg-12 margin-tb">
@@ -29,7 +53,7 @@
         @method('PUT')
 
         <div class="row">
-            
+
 
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <strong>Marca:</strong>

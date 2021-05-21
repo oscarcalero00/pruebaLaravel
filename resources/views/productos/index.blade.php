@@ -1,12 +1,43 @@
 @extends('layouts.app')
 
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #ADD8E6;">
+    <a href="/">
+        <img src="https://www.tiendapp.net/images/logo-tiendapp.png" />
+    </a>
+    &nbsp;
+    &nbsp;
+    <a href="/marcas">
+        Marcas
+    </a>
+    &nbsp;
+    &nbsp;
+    <a href="/productos">
+        Productos
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+    </div>
+</nav>
 @section('content')
+
+
+
+
+
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
                 <h2>Listado de productos </h2>
             </div>
             <div class="pull-right">
+
                 <a class="btn btn-success" href="{{ route('productos.create') }}" title="Create a producto"> <i class="fas fa-plus-circle"></i>
                     </a>
             </div>
@@ -21,23 +52,26 @@
 
     <table class="table table-bordered table-responsive-lg">
         <tr>
-            <th>Numero</th>
+
             <th>Nombre</th>
+            <th>Talla</th>
             <th>Observaciones</th>
-            <th>Cantidad</th>
-            <th>Fecha Embargue</th>
-            
+            <th>Marca</th>
+            <th>Cantidad Inventario</th>
+            <th>Fecha Embarque</th>
             <th>Fecha Creación</th>
             <th width="280px">Acciones</th>
         </tr>
         @foreach ($productos as $producto)
             <tr>
-                <td>{{ ++$i }}</td>
+
                 <td>{{ $producto->producto_nombre }}</td>
+                <td>{{ $producto->talla->talla_nombre }}</td>
                 <td>{{ $producto->producto_observaciones }}</td>
+                <td>{{ $producto->marca->marca_nombre }}</td>
                 <td>{{ $producto->producto_cantidad }}</td>
                 <td>{{ $producto->producto_fechaembarque }}</td>
-                <td>{{ date_format($producto->created_at, 'jS M Y') }}</td>
+                <td>{{ ($producto->created_at) }}</td>
                 <td>
                     <form action="{{ route('productos.destroy', $producto->id) }}" method="POST">
 

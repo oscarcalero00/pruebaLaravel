@@ -16,4 +16,8 @@ class Talla extends Model
     protected $attributes = [
         'talla_nombre' => true,
     ];
+
+    public function producto(){
+        return $this->belongsTo(Producto::class,"producto_talla","id");
+    }
 }

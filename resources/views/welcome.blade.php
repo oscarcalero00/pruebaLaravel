@@ -18,14 +18,43 @@
             body {
                 font-family: 'Nunito', sans-serif;
             }
+            #botones-marcas{
+                width: 160px;
+                height: 100px;
+                font-size: xx-large;
+                background-color: #E9BD15;
+                color: white;
+                cursor: pointer;
+            }
+            #botones-producto{
+                width: 160px;
+                height: 100px;
+                font-size: xx-large;
+                background-color: #E9BD15;
+                color: white;
+                cursor: pointer;
+            }
+
         </style>
     </head>
     <body class="antialiased">
+
+
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
+
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div class="row">
-                    <div class="ml-4 text-lg leading-7 font-semibold"><a href="/marcas" class="underline text-gray-900 dark:text-white">Marcas</a></div>
-                    <div class="ml-4 text-lg leading-7 font-semibold"><a href="/productos" class="underline text-gray-900 dark:text-white">Productos</a></div>
+                        <img src="https://www.tiendapp.net/images/logo-tiendapp.png" style="width: 300px" />
+                </div>
+                <div class="row" style="text-align-last: center;">
+                    <!--
+                    <span class="ml-4 text-lg leading-7 font-semibold"><a href="/marcas" class="underline text-gray-900 dark:text-white">Marcas</a></span>
+                    <span class="ml-4 text-lg leading-7 font-semibold"><a href="/productos" class="underline text-gray-900 dark:text-white">Productos</a></span>
+                -->
+                    <div class="card" >
+                        <button type="button" id="botones-marcas" onclick='location="/marcas";'>Marcas</button>
+                        <button type="button" id="botones-producto"  onclick='location="/productos";'>Productos</button>
+                    </div>
                 </div>
             </div>
         </div>

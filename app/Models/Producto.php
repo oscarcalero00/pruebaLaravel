@@ -32,5 +32,17 @@ class Producto extends Model
         'producto_marca' ,
     ];
 
+    public function marca()
+    {
+        //return $this->hasMany(Marca::class,"producto_marca","");
+        return $this->hasOne(Marca::class,"id","producto_marca");
+    }
+
+    public function talla()
+    {
+        //return $this->hasMany(Marca::class,"producto_marca","");
+        return $this->hasOne(Talla::class,"id","producto_talla");
+    }
+
 
 }

@@ -19,7 +19,7 @@ class ProductoController extends Controller
         //
          //
          $productos = Producto::latest()->paginate(5);
-
+         
          return view('productos.index', compact('productos'))
              ->with('i', (request()->input('page', 1) - 1) * 5);
     }
@@ -57,7 +57,7 @@ class ProductoController extends Controller
         Producto::create($request->all());
 
         return redirect()->route('productos.index')
-            ->with('success', 'Producto actualizada correctamente');
+            ->with('success', 'Producto actualizado correctamente');
 
     }
 
@@ -123,6 +123,6 @@ class ProductoController extends Controller
         $producto->delete();
 
         return redirect()->route('productos.index')
-            ->with('success', 'Producto eliminada correctamente');
+            ->with('success', 'Producto eliminado correctamente');
     }
 }
