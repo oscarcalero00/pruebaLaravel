@@ -71,7 +71,7 @@
                 <td>{{ $producto->marca->marca_nombre }}</td>
                 <td>{{ $producto->producto_cantidad }}</td>
                 <td>{{ $producto->producto_fechaembarque }}</td>
-                <td>{{ ($producto->created_at) }}</td>
+                <td>{{ date_format($producto->created_at, 'Y-m-d') }}</td>
                 <td>
                     <form action="{{ route('productos.destroy', $producto->id) }}" method="POST">
 
@@ -87,7 +87,7 @@
                         @csrf
                         @method('DELETE')
 
-                        <button type="submit" title="delete" style="border: none; background-color:transparent;">
+                        <button type="submit" title="delete" style="border: none; background-color:transparent;" onclick="return confirm('¿Esta seguro de eliminiar este registro?')">
                             <i class="fas fa-trash fa-lg text-danger"></i>
 
                         </button>

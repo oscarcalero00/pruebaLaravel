@@ -55,7 +55,7 @@
         </tr>
         @foreach ($marcas as $marca)
             <tr>
-          
+
                 <td>{{ $marca->marca_referencia }}</td>
                 <td>{{ $marca->marca_nombre }}</td>
 
@@ -75,7 +75,7 @@
                         @csrf
                         @method('DELETE')
 
-                        <button type="submit" title="delete" style="border: none; background-color:transparent;">
+                        <button type="submit" title="delete" style="border: none; background-color:transparent;" onclick="return confirm('¿Esta seguro de eliminiar este registro?')">
                             <i class="fas fa-trash fa-lg text-danger"></i>
 
                         </button>

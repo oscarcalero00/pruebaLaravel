@@ -61,4 +61,7 @@
 
 
     </body>
+    <div class="card-footer text-muted" style="text-align-last: center;">
+        Desarrollado por Oscar Calero
+      </div>
 </html>

@@ -80,19 +80,19 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Observaciones:</strong>
-                    <input type="text" name="producto_observaciones" class="form-control" placeholder="Name" value="{{ $producto->producto_observaciones }}">
+                    <input type="text" name="producto_observaciones" class="form-control" placeholder="Observaciones" value="{{ $producto->producto_observaciones }}">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Cantidad:</strong>
-                    <input type="number" name="producto_cantidad" class="form-control" placeholder="Name" value="{{ $producto->producto_cantidad }}">
+                    <input type="number" name="producto_cantidad" class="form-control" placeholder="Cantidad" value="{{ $producto->producto_cantidad }}">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Fecha Embarque:</strong>
-                    <input type="date" name="producto_fechaembarque" class="form-control" placeholder="Name" value="{{ $producto->producto_fechaembarque }}">
+                    <input type="date" name="producto_fechaembarque" class="form-control" placeholder="Fecha embarque" value="{{ $producto->producto_fechaembarque }}">
                 </div>
             </div>
 

@@ -38,6 +38,7 @@
         <div class="card" style="padding: 30px">
         @yield('content')
         </div>
+
     </div>
 </body>
 

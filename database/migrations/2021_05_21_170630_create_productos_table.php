@@ -31,7 +31,8 @@ class CreateProductosTable extends Migration
             $table->foreign('producto_talla')
                 ->references('id')
                 ->on('talla')
-                ->onDelete('cascade');
+                ->onDelete('cascade')
+                ;
 
         });
     }

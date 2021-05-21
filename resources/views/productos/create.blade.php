@@ -70,25 +70,25 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Nombre:</strong>
-                    <input type="text" name="producto_nombre" class="form-control" placeholder="Name">
+                    <input type="text" name="producto_nombre" class="form-control" placeholder="Nombre">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Observaciones:</strong>
-                    <input type="text" name="producto_observaciones" class="form-control" placeholder="Name">
+                    <input type="text" name="producto_observaciones" class="form-control" placeholder="Observaciones">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Cantidad:</strong>
-                    <input type="number" name="producto_cantidad" class="form-control" placeholder="Name" >
+                    <input type="number" name="producto_cantidad" class="form-control" placeholder="Cantidad" >
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Fecha Embarque:</strong>
-                    <input type="date" name="producto_fechaembarque" class="form-control" placeholder="Name">
+                    <input type="date" name="producto_fechaembarque" class="form-control" placeholder="Fecha embarque">
                 </div>
             </div>
             <br><br>
